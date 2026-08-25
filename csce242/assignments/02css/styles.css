@@ -1,0 +1,33 @@
+/* Structural */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252,157,155);
+    color: rgb(112, 148, 131)
+}
+
+#content {
+    background-color: rgb(255,204,173);
+    width:70%;
+    padding: 5px;
+    margin:auto;
+    border-radius:5px;
+}
+
+header, main, footer {
+    padding: 5px;
+}
+
+header, footer {
+    background-color: rgb(201,200,170);
+    color: rgb(148, 0, 211);
+}
+/* Navigation */
+
+
+/* Typography */
+h1 {
+    color: rgb(255,204,173);
+}
+h2 {
+    color: rgb(112, 148, 131);
+}
