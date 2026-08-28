@@ -1,48 +1,100 @@
 /* Structural */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(253,226,228);
+    background-color: grey;
     margin: 0;
 }
 
 #content {
-    background-color: rgb(218, 196, 247);
-    width:70%;
-    padding: 5px;
-    margin:auto;
-    border-radius:5px;
-    box-shadow: 5px 5px lightcyan;
+    width:90%;
+    margin: 0 auto;
 }
 
-header, main, footer {
-    padding: 5px;
+/*the header formatting */
+#main-header {
+    background-color: rgb(251,250,248);
+    text-align: center;
+    padding: 10px 0;
 }
 
-header, footer {
-    background: mistyrose;
-    color: rgb(148, 0, 211);
-}
-/* Navigation */
-
-
-/* Typography */
-h1 {
-    color: rgb(244, 152, 156);
-}
-h2 {
-    color: rgb(244, 152, 156);
+#main-header h1 {
+    color: rgb(128,155,206);
+    margin: 0;
+    padding: 10px 0;
 }
 
-a:link {
-    color: rgb(244, 152, 156);
-  text-decoration: none;
+#main-header h2 {
+    color: rgb(128,155,206);
+    margin: 0;
+    padding: 10px 0;
 }
 
-a:visited {
-    color: rgb(112, 0, 160);
-    text-decoration: none;
+main > .columns + .columns {
+    margin-top: 10px;
 }
 
-ol {
-    color: rgb(112, 0, 160);
+.four {
+    background-color: rgb(205,218,253);
+    padding: 15px;
+    text-align: center;
 }
+
+.four h3 {
+    background-color: rgb(128,155,206);
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+.four p {
+    margin: 10px 0 0 0;
+    color: rgb(80,80,80);
+}
+
+/* images */
+img {
+    max-width: 100%;
+    display: block;
+    width: 100%;
+}
+
+/* footer formatting */
+footer {
+    background-color: rgb(251,250,248);
+    color: rgb(128,155,206);
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;
+}
+
+/* responsive design */
+
+/* pc/larger formatting */
+@media (min-width: 1000px) {
+    .columns {
+        display: flex;
+    }
+
+    .four {
+        flex: 1;
+        margin: 0 8px;
+    }
+
+    .four:first-child {
+        margin-left: 0;
+    }
+
+    .four:last-child {
+        margin-right: 0;
+    }
+}
+
+/* mobile/smaller formatting */
+@media (max-width: 999px) {
+    .four {
+        width: 100%;
+        margin: 0 0 15px 0;
+        box-sizing: border-box;
+    }
+}
+
