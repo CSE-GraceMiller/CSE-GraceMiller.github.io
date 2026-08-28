@@ -9,13 +9,39 @@ body {
     margin:auto;
 }
 
-#main-header {
+#main-header, footer {
+    background-color: rgb(223,231,253);
+    text-align: center;
+}
+
+#sidebar {
+    background-color: rgb(205,218,253);
+}
+
+#info {
     background-color: rgb(223,231,253);
 }
 
+#sidebar, #info {
+    padding:5px;
+}
+
 /* navigation */
+#main-nav ul, #quick-links {
+    list-style-type: none;
+    padding-left: 0;
+}
 
+#main-nav li {
+    background-color: rgb(250,210,225);
+    padding: 5px;
+    border-bottom: 1px solid rgb(255,241,230);
+}
 
+#main-nav a {
+    color: rgb(226,115,150);
+    text-decoration: none;
+}
 
 /* images */
 
