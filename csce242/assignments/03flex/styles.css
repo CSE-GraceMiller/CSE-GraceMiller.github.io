@@ -4,6 +4,15 @@ body {
     background-color: rgb(253,226,228);
 }
 
+#content {
+    width:80%;
+    margin:auto;
+}
+
+#main-header {
+    background-color: rgb(223,231,253);
+}
+
 /* navigation */
 
 
