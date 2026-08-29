@@ -17,13 +17,14 @@ body {
 #main-header {
     background-color: rgb(251,250,248);
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 #main-header h1 {
     color: rgb(128,155,206);
+    font-size: 50px;
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 10px 20px;
 }
 
 main > .columns + .columns {
@@ -75,7 +76,15 @@ main > .columns + .columns {
     background-color: rgb(255,207,210);
     padding: 8px 12px;
     margin-bottom: 3px;
-    color: rgb(234,154,178);
+
+}
+
+#quick-links a {
+    display: block;
+    color: rgb(223, 135, 162);
+    text-decoration: none;
+    font-size: 0.85em;
+    padding: 6px;
 }
 
 /* the title and idea formatting */
@@ -123,6 +132,33 @@ footer {
 
 /* responsive design */
 
+/* mobile/smaller formatting */
+@media (max-width: 999px) {
+
+    #sidebar,.four,.one {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    #main-nav li {
+        border-right: none;
+        border-bottom: 1px solid rgb(205,218,253);
+    }
+
+    .four + .four {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .one img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+}
+
 /* pc/larger formatting */
 @media (min-width: 1000px) {
     .columns {
@@ -152,31 +188,4 @@ footer {
     .six {
         flex: 6;
     }
-}
-
-/* mobile/smaller formatting */
-@media (max-width: 999px) {
-
-    #sidebar,.four,.one {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        box-sizing: border-box;
-    }
-
-    #main-nav li {
-        border-right: none;
-        border-bottom: 1px solid rgb(205,218,253);
-    }
-
-    .four + .four {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .one img {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
 }
