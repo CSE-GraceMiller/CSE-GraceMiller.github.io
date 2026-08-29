@@ -19,7 +19,7 @@ body {
 }
 
 #main-header h1,#main-header h2,#project-header h2 {
-    color: rgb(128,155,206);
+    color: rgb(128, 155, 206);
     margin: 0;
     padding: 10px 0;
 }
@@ -28,16 +28,14 @@ main > .columns {
     margin-bottom: 30px;
 }
 
-main > #main-header {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .four {
     background-color: rgb(205,218,253);
     padding: 15px;
     text-align: center;
-    max-width: 320px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
     border-radius: 12px;
 }
 
@@ -59,9 +57,9 @@ main > #main-header {
 
 /* images */
 img {
-    max-width: 100%;
-    display: block;
     width: 100%;
+    display: block;
+    border-radius: 12px;
 }
 
 /* footer formatting */
@@ -87,19 +85,5 @@ footer {
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-/* mobile/smaller formatting */
-@media (max-width: 999px) {
-    .four {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto 20px auto;
-        box-sizing: border-box;
-    }
-
-    .columns {
-        display: block;
     }
 }
