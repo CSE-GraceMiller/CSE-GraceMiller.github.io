@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
     <head>
         <!--
         Author: Grace Miller 
@@ -12,35 +13,37 @@
     top bar content
     -->
     <body>
-        <header class="top-header">
-            <div class="top-header-inner">
-                <a href="#"><span class="logo-text">University Of South Carolina</span></a>
-                <div class="top-links">
-                    <a href="#">Calendar</a>
-                    <a href="#">Map</a>
-                    <a href="#">Directory</a>
-                    <a href="#">Apply</a>
-                    <a href="#">Give</a>
-                    <a href="#">Gateways</a>
+        <header class="page-header">
+            <div class="utility-bar">
+                <div class="header-inner utility-inner">
+                    <a href="#">CALENDAR</a>
+                    <a href="#">MAP</a>
+                    <a href="#">DIRECTORY</a>
+                    <a href="#">APPLY</a>
+                    <a href="#">GIVE</a>
+                    <a href="#">GATEWAYS ›</a>
                 </div>
             </div>
-            <header class="site-header">
-                <div class="container header-content">
-                    <a href="#"><span class="school-name">Floyd School of Medicine</span></a>
+            <div class="brand-bar">
+                <div class="header-inner brand-inner">
+                    <a class="usc-logo" href="#">
+                        <span class="usc-icon">USC</span>
+                        <span class="usc-wordmark">
+                            <small>UNIVERSITY OF</small>
+                            <strong>South Carolina</strong>
+                        </span>
+                    </a>
+                    <a class="school-name" href="#">Floyd School of Medicine</a>
                 </div>
-            </div>
+            </div>    
         </header>
-        <!--
-        main navigation links
-        -->
         <nav class="main-nav">
-            <div class="nav-inner">
-                <a href="#" class="site-title">Floyd School of Medicine</a>
-                <div class="nav-links">
-                    <a href="#education">Education</a>
-                    <a href="#research">Research</a>
-                    <a href="#about">About</a>
-                </div>
+            <div class="header-inner nav-inner">
+                <a href="#">EDUCATION<span>⌄</span></a>
+                <a href="#">RESEARCH<span>⌄</span></a>
+                <a href="#">CENTERS AND INSTITUTES<span>⌄</span></a>
+                <a href="#">ABOUT<span>⌄</span></a>
+                <a class="search-button" href="#" aria-label="Search"></a>
             </div>
         </nav>
         <!--
@@ -49,12 +52,100 @@
         <main>
             <section class="hero">
                 <div class="hero-image">
-                    <img src="https://placehold.co/1000x650/5b0017/ffffff?text=School+of+Medicine"alt="Placeholder image of the school of Medicine">
+                    <img src="https://placehold.co/1890x650/5b0017/ffffff?text=School+of+Medicine"alt="Placeholder image of the school of Medicine">
                 </div>
             </section>
         </main>
-        <footer>
-            <p>fill in USC footer info later</p>
+        <!--
+        footer section
+        -->
+        <footer class="usc-footer">
+            <div class="footer-main">
+                <div class="footer-top">
+                    <a class="footer-brand" href="#">
+                        <span class="usc-mark">USC</span>
+                        <span>University Of South Carolina</span>
+                    </a>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">I</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <div class="footer-columns">
+                    <section class="footer-section colleges">
+                        <h2>Colleges & Schools</h2>
+                        <div class="footer-link-columns">
+                            <div>
+                                <a href="#">Arts and Sciences</a>
+                                <a href="#">Business</a>
+                                <a href="#">Education</a>
+                                <a href="#">Engineering and Computing</a>
+                                <a href="#">The Graduate School</a>
+                                <a href="#">Hospitality, Retail and Sport Management</a>
+                            </div>
+                            <div>
+                                <a href="#">Information and Communications</a>
+                                <a href="#">Law</a>
+                                <a href="#">Medicine</a>
+                                <a href="#">Medicine (Greenville)</a>
+                                <a href="#">Music</a>
+                                <a href="#">Nursing</a>
+                            </div>
+                            <div>
+                                <a href="#">Pharmacy</a>
+                                <a href="#">Public Health</a>
+                                <a href="#">Social Work</a>
+                                <a href="#">South Carolina Honors College</a>
+                                <a href="#">Palmetto College</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-section offices"><h2>Offices & Divisions</h2>
+                        <div class="footer-link-columns">
+                            <div>
+                                <a href="#">Employment</a>
+                                <a href="#">Undergraduate Admissions</a>
+                                <a href="#">Financial Aid and Scholarships</a>
+                                <a href="#">Bursar (fee payment)</a>
+                                <a href="#">Veterans and Military Services</a>
+                                <a href="#">Disability Resources</a>
+                            </div>
+                            <div>
+                                <a href="#">Access and Opportunity</a>
+                                <a href="#">Human Resources</a>
+                                <a href="#">Law Enforcement and Safety</a>
+                                <a href="#">University Libraries</a>
+                                <a href="#">All Offices and Divisions</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-section tools">
+                        <h2>Tools</h2>
+                        <div class="footer-link-columns">
+                            <div>
+                                <a href="#">Carolina Alert</a>
+                                <a href="#">Campus Email</a>
+                                <a href="#">my.sc.edu</a>
+                                <a href="#">Blackboard</a>
+                                <a href="#">Campus Safety and Wellness</a>
+                                <a href="#">PeopleSoft Finance</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <span>© University of South Carolina</span>
+                    <a href="#">Privacy</a>
+                    <a href="#">Student Consumer Information</a>
+                    <a href="#">Transparency Initiative</a>
+                    <a href="#">Civil Rights and Title IX</a>
+                    <a href="#">Digital Accessibility</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

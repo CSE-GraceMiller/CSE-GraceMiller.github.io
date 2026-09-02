@@ -1,6 +1,315 @@
-/* Structural */
+/* header formatting*/
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* typography */
+.header-inner {
+    width: min(1360px, 100% - 48px);
+    margin: 0 auto;
+}
 
-/* responsive design */
+/* top black bar with left corner nav links */
+.utility-bar {
+    height: 30px;
+    background-color: #000000;
+}
+
+.utility-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.utility-inner a {
+    padding: 0 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    border-right: 1px solid #a7a7a7;
+}
+
+.utility-inner a:first-child {
+    padding-left: 0;
+}
+
+.utility-inner a:last-child {
+    border-right: none;
+}
+
+/* the top black bar that has the usc logo and school name */
+.brand-bar {
+    height: 87px;
+    background-color: #000;
+}
+
+.brand-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.usc-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.usc-icon {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #73000a;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.usc-wordmark strong {
+    display: block;
+}
+
+.usc-wordmark small {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.usc-wordmark strong {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.school-name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(25px, 2vw, 35px);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* garnet colored nav bar */
+.main-nav {
+    height: 51px;
+    background-color: #75000A;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+
+.nav-inner > a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-inner span {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+/* the search icon/buttong (non-functional) */
+.search-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.search-button::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.search-button::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+/* the footer fomatting/layout */
+.usc-footer {
+    background-color: #73000a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-main {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 32px 24px 72px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 38px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.usc-mark {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    background: #111;
+    border: 1px solid white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer-brand small {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-brand strong {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    line-height: 0.9;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 31px;
+    height: 31px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 0.6fr;
+    gap: 32px;
+}
+
+.footer-section h2 {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.footer-link-columns {
+    display: grid;
+    gap: 28px;
+}
+
+.colleges .footer-link-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.offices .footer-link-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-link-columns a {
+    display: block;
+    margin-bottom: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #000;
+    border-top: 1px solid white;
+}
+
+.footer-bottom-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 13px 24px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-bottom a,
+.footer-bottom span {
+    color: white;
+    padding: 0 14px;
+    text-decoration: none;
+    border-right: 1px solid #aaa;
+}
+
+.footer-bottom span {
+    padding-left: 0;
+}
+
+.footer-bottom a:last-child {
+    border-right: none;
+}
+
+/* Phone layout */
+@media (max-width: 800px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .colleges .footer-link-columns,
+    .offices .footer-link-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-top {
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    .footer-brand strong {
+        font-size: 27px;
+    }
+}
