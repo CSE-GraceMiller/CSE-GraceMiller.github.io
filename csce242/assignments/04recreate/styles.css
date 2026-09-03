@@ -162,7 +162,7 @@ body {
     font-weight: bold
 }
 
-/* section 2/education card */
+/* section 2/education card/other cards */
 .feature {
     position: relative;
     margin: 40px 0 80px;
@@ -178,7 +178,7 @@ body {
 .feature-card {
     position: absolute;
     bottom: -40px;
-    right: max(24px, calc((100% - 1200px) / 2 + 24px));
+    right: 5%;
     width: min(420px, 90%);
     background: #73000a;
     color: white;
@@ -187,7 +187,7 @@ body {
 
 .feature-card-left {
     right: auto;
-    left: max(24px, calc((100% - 1200px) / 2 + 24px));
+    left: 5%;
     border-radius: 0 0 0 8px;
 }
 
@@ -214,6 +214,43 @@ body {
     text-decoration: none;
     letter-spacing: 0.5px;
     border: 2px solid #000;
+}
+
+/* quote section/section 3 */
+.quote {
+    padding: 100px 0 80px;
+    background: #fff;
+}
+
+.quote-inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.quote-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.quote blockquote {
+    margin: 0;
+    position: relative;
+}
+
+.quote blockquote p {
+    font-size: 1.35rem;
+    line-height: 1.50;
+    color: #73000a;
+    margin: 0 0 18px;
+}
+
+.quote cite {
+    font-size: 0.95rem;
+    color: #444;
 }
 
 /* the footer fomatting/layout */
