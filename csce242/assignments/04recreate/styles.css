@@ -177,11 +177,12 @@ body {
     display: block;
 }
 
+/* research and education cards */
 .feature-card {
     position: absolute;
     bottom: -40px;
     right: 5%;
-    width: min(420px, 90%);
+    width: min(680px, 92%);
     background: #73000a;
     color: white;
     padding: 36px 32px 40px;
@@ -190,7 +191,11 @@ body {
 .feature-card-left {
     right: auto;
     left: 5%;
+}
 
+/* centers and institues card */
+.feature-centers .feature-card {
+    width: min(480px, 90%);     /* ← narrower than the other two */
 }
 
 .feature-card h2 {
@@ -317,6 +322,90 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+/* ===== School footer under Stay Connected ===== */
+.school-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.school-footer-left {
+    flex: 1 1 280px;
+}
+
+.school-name-link {
+    display: block;
+    color: #73000a;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 18px;
+}
+
+.school-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.button-black {
+    background: #000;
+    color: white;
+    border: 2px solid #000;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    color: #73000a;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.school-footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.school-footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.school-footer-links a {
+    display: block;
+    color: #73000a;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.school-footer-address {
+    color: #73000a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 0 0 220px;
+}
+
+.school-footer-address strong {
+    font-size: 1rem;
 }
 
 /* the footer fomatting/layout */
