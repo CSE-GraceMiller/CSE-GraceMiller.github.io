@@ -40,6 +40,10 @@ body {
     border-right: none;
 }
 
+.footer-bottom a:last-child {
+    border-right: none;
+}
+
 /* the top black bar that has the usc logo and school name */
 .brand-bar {
     height: 87px;
@@ -100,7 +104,7 @@ body {
 /* garnet colored nav bar */
 .main-nav {
     height: 51px;
-    background-color: #75000A;
+    background-color: #73000a;
 }
 
 .nav-inner {
@@ -453,20 +457,6 @@ body {
     font-weight: bold;
 }
 
-.footer-brand small {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.footer-brand strong {
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 34px;
-    line-height: 0.9;
-}
-
 .social-links {
     display: flex;
     gap: 20px;
@@ -522,8 +512,7 @@ body {
     text-decoration: none;
 }
 
-.footer-link-list,
-.footer-legal-links {
+.footer-link-list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -622,5 +611,109 @@ body {
 
 .feature-card p {
     font-size: 0.95rem;
+}
+
+/* ino card section mobile formatting */
+.cards-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* quote section mobile formatting*/
+.quote {
+    padding: 70px 0;
+}
+
+.quote-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.quote-photo {
+    width: 300px;
+    height: 300px;
+}
+
+.quote blockquote {
+    width: 100%;
+}
+
+.quote blockquote p {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+/* stay connected footer formatting for mobile */
+.school-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.school-footer-left {
+    flex: none;
+    width: 100%;
+    padding-right: 0;
+}
+
+.school-name-link {
+    margin-bottom: 26px;
+}
+
+.school-actions {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icons {
+    justify-content: center;
+}
+
+.school-footer-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 28px 0 0;
+    border-top: 1px solid #bbb;
+    border-right: none;
+    border-left: none;
+}
+
+.school-footer-links ul {
+    margin: 0;
+}
+
+.school-footer-links a {
+    margin-bottom: 16px;
+}
+
+.school-footer-address {
+    flex: none;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
 }
 }
