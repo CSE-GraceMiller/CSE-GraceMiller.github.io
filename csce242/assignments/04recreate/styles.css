@@ -195,7 +195,7 @@ body {
 
 /* centers and institues card */
 .feature-centers .feature-card {
-    width: min(480px, 90%);     /* ← narrower than the other two */
+    width: min(480px, 90%);
 }
 
 .feature-card h2 {
@@ -298,7 +298,7 @@ body {
     text-decoration: none;
 }
 
-/* stay connected section/section 6*/
+/* stay connected section/section 6 */
 .stay-connected {
     padding: 70px 0 90px;
     background: #EDEDED;
@@ -324,21 +324,43 @@ body {
     flex-wrap: wrap;
 }
 
-/* ===== School footer under Stay Connected ===== */
+/* stay connected bottom section */
 .school-footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 70px;
+    margin-top: 60px;
     padding-top: 40px;
-    border-top: 1px solid #ccc;
     text-align: left;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 0;
 }
 
 .school-footer-left {
     flex: 1 1 280px;
+    padding-right: 40px;
+}
+
+.school-footer-links {
+    display: flex;
+    gap: 50px;
+    padding: 0 40px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.school-footer-address {
+    color: black;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 0 0 220px;
+    padding-left: 40px;
+}
+
+.school-footer-address .address-link {
+    color: #73000a;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 1rem;
 }
 
 .school-name-link {
@@ -360,7 +382,7 @@ body {
 .button-black {
     background: #000;
     color: white;
-    border: 2px solid #000;
+    border: 2px solid white;
     padding: 10px 18px;
     font-size: 0.85rem;
 }
@@ -377,11 +399,6 @@ body {
     font-size: 1.1rem;
 }
 
-.school-footer-links {
-    display: flex;
-    gap: 50px;
-}
-
 .school-footer-links ul {
     list-style: none;
     margin: 0;
@@ -395,17 +412,6 @@ body {
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 0.95rem;
-}
-
-.school-footer-address {
-    color: #73000a;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    flex: 0 0 220px;
-}
-
-.school-footer-address strong {
-    font-size: 1rem;
 }
 
 /* the footer fomatting/layout */
@@ -575,4 +581,46 @@ body {
     .footer-brand strong {
         font-size: 27px;
     }
+
+    .main-nav {
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .nav-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 24px;
+        padding: 0 16px;
+    }
+
+    .nav-inner > a {
+        font-size: 14px;
+    }
+
+    .feature {
+    margin: 24px 0 64px;
+}
+
+.feature-img {
+    height: 360px;
+}
+
+.feature-card,
+.feature-card-left,
+.feature-centers .feature-card {
+    left: 16px;
+    right: 16px;
+    bottom: -32px;
+    width: auto;
+    padding: 26px 22px 30px;
+}
+
+.feature-card h2 {
+    font-size: 1.8rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+}
 }
