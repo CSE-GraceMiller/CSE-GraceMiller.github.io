@@ -12,36 +12,42 @@
                     <h1>Assignment 7</h1>
                     <h2>Introduction to JavaScript</h2>
                 </div>
-                <button class="menu-btn" aria-label="Menu">⋯</button>
             </header>
             <!-- columns -->
              <main class="cards">
                 <section class="card">
                     <h3>Speech</h3>
                     <div class="card-body">
-                        <p>speech filler</p>
+                        <p class="speech">Hi</p>
                     </div>
                 </section>
                 <!-- bev card -->
                  <section class="card">
                     <h3>Beverage</h3>
-                    <div class="card-body">
-                        <p>beverage filler</p>
-                    </div>
+                    <label for="beverage">Pick your morning beverage:</label>
+                    <select id="beverage">
+                        <option value="">-- Choose --</option>
+                        <option value="Coffee">Coffee</option>
+                        <option value="Tea">Tea</option>
+                        <option value="Orange Juice">Orange Juice</option>
+                        <option value="Water">Water</option>
+                        <option value="Smoothie">Smoothie</option>
+                    </select>
+                    <p id="beverage-message" class="beverage-message"></p>
                 </section>
                 <!-- sticker card -->
                  <section class="card">
                     <h3>Add a Sticker</h3>
-                    <div class="card-body">
-                        <p>sticker filler</p>
-                    </div>
-                </section>
-            </main>
-            <!-- footer -->
-             <footer class="footer">
-                <p>&copy; gracemiller</p>
-            </footer>
-        </div>
-        <script src="scripts/script.js"></script>
+                    <div class="card-body sticker-area">
+                        <div class="sun" id="sun">☀️</div>
+                        </div>
+                    </section>
+                </main>
+                <!-- footer -->
+                 <footer class="footer">
+                    <p>&copy; gracemiller</p>
+                </footer>
+            </div>
+            <script src="scripts/script.js"></script>
     </body>
 </html>
