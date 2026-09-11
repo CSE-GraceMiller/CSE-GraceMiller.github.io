@@ -3,7 +3,7 @@ body {
   background-color: rgb(234,154,178);
 }
 
-/* lighter pink container */
+/* page class */
 .page {
   max-width: 1100px;
   margin: 2rem auto;
@@ -146,9 +146,6 @@ body {
 /* stickers that appears when sun is clicked */
 .sticker {
   position: absolute;
-  font-size: 1.8rem;
-  pointer-events: none;
-  animation: popIn 0.3s ease;
 }
 
 

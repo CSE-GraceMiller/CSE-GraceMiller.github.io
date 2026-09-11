@@ -7,3 +7,8 @@ document.getElementById("speech-card").onclick = () => {
 document.getElementById("beverage").onchange = (e) => {
   document.getElementById("beverage-message").innerHTML = (e.target.value && e.target.value + ": Nice Choice!") || "";
 };
+
+//adds the smiley face sticker when the sun on the sticker card is clicked
+document.getElementById("sun").onclick = () => {
+  document.querySelector(".sticker-area").innerHTML += `<span class="sticker" style="left:20%;top:25%">😊</span>`;
+};
