@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Project Main Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="page">
-            <!-- 
-            header 
-            -->
-             <header class="header">
-                <div class="header-content">
-                    <p>filler</p>
-                </div>
-            </header>
-             <main>
-             </main>
-                <!-- 
-                footer 
-                -->
-                 <footer class="footer">
-                    <p>&copy; gracemiller</p>
-                </footer>
+<head>
+    <title>Java Conditionals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header-content">
+                <h1>Assignment 6</h1>
+                <h2>If Statements</h2>
+                <nav id="main-nav">
+                    <ul id="menu-items">
+                        <li>
+                            <a href="#" id="exercise1-link">Exercise 1</a>
+                        </li>
+                        <li>
+                            <a href="#" id="exercise2-link">Exercise 2</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <script src="scripts/script.js"></script>
-    </body>
+        </header>
+        <main>
+            <!-- 
+            exercise 1 
+            -->
+            <section id="exercise1" class="card">
+                <h3>
+                    Missing Class Point Deductions
+                </h3>
+                <div class="card-body">
+                    <p id="missing-question">
+                        How many days do you intend to miss class?
+                    </p>
+                    <input type="number" id="txt-num-days">
+                    <p id="p-missing-message"></p>
+                </div>
+            </section>
+            <!-- 
+            exercise 2 
+            -->
+            <section id="exercise2" class="card hidden">
+                <h3>
+                    End of Semester Counter
+                </h3>
+                <div class="card-body">
+                    <p id="p-days-left"></p>
+                    <p id="p-count-message"></p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; gracemiller</p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
 </html>

@@ -1,4 +1,162 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(234,154,178);
+  background-color: rgb(243, 192, 207);
+}
+
+/* page class */
+.page {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 25px;
+  background-color: rgb(207, 206, 247);
+  border-radius: 12px;
+}
+
+/* header */
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header-content {
+  text-align: center;
+  flex: 1;
+}
+
+.header h1 {
+  color: rgb(128, 155, 206);
+  margin-bottom: 2px;
+}
+
+.header h2 {
+  color: rgb(128, 155, 206);
+}
+
+/* navigation */
+#main-nav {
+  text-align: center;
+}
+
+#menu-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#menu-items li {
+  display: inline;
+  margin: 0 5px;
+}
+
+#menu-items a {
+  color: rgb(128, 155, 206);
+  text-decoration: none;
+}
+
+#menu-items a:hover {
+  cursor: pointer;
+}
+
+/* cards */
+.card {
+  background-color: white;
+  border: 2px solid rgb(128, 155, 206);
+  border-radius: 10px;
+  padding: 15px;
+  color: rgb(128, 155, 206);
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  margin-bottom: 20px;
+}
+
+/* card heading */
+.card h3 {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgb(128, 155, 206);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(128, 155, 206);
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* exercise 1 question */
+#missing-question {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* input */
+#txt-num-days {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border: 1px solid rgb(128, 155, 206);
+  border-radius: 6px;
+  background: #fff;
+  color: rgb(80, 100, 150);
+  min-width: 150px;
+}
+
+/* messages */
+#p-missing-message,
+#p-days-left,
+#p-count-message {
+  margin-top: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(80, 100, 150);
+  min-height: 1.4em;
+}
+
+/* hide */
+.hidden {
+  display: none;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(128, 155, 206);
+  padding-top: 0.5rem;
+}
+
+/* mobile formatting */
+@media (max-width: 999px) {
+
+  .page {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .header h2 {
+    font-size: 1.1rem;
+  }
+
+  #menu-items li {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .card {
+    min-height: auto;
+  }
 }
