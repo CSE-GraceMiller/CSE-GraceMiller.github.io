@@ -1,0 +1,374 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #faf6ef;
+  color: #2c3e2d;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* header formatting*/
+.header {
+  background: #1a3c34;
+  color: white;
+  padding: 0.75rem 0;
+  top: 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+/* hero fomratting */
+.hero {
+    background-color: #E9D3AF;
+  padding: 3.5rem 0 4.5rem;
+  position: relative;
+
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-text {
+  position: relative;
+}
+
+
+.hero-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  line-height: 1.15;
+  color: #1a3c34;
+  margin-bottom: 1.1rem;
+  position: relative;
+}
+
+.hero-text p {
+  font-size: 1.12rem;
+  color: #1a3c34;
+  max-width: 420px;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e07a3d;
+  color: white;
+  padding: 0.85rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+
+/* loved books formatting */
+.most-loved {
+  padding: 4rem 0 3rem;
+}
+
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.1rem;
+  color: #1a3c34;
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.books-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.book-card {
+  text-align: center;
+  position: relative;
+}
+
+.book-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a3c34;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.3;
+}
+
+.book-card h3 {
+    color: #1a3c34;
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.author {
+  color: #1a3c34;
+  font-size: 0.95rem;
+}
+
+.heart {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: white;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* events formattign */
+.events {
+  padding: 1.5rem 0 4rem;
+}
+
+.events-card {
+  background: #f9e8b0;
+  border-radius: 28px;
+  padding: 2.5rem 2rem 2.8rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.events-card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  color: #1a3c34;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.event {
+  text-align: center;
+  background: rgba(255,255,255,0.6);
+  border-radius: 20px;
+  padding: 1.4rem 1rem 1.6rem;
+}
+
+.event-date {
+  display: inline-flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  padding: 0.35rem 0.9rem;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.event-date .month {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e07a3d;
+  text-transform: uppercase;
+}
+
+.event-date .day {
+  font-size: 1.55rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.event h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.event p {
+  font-size: 0.9rem;
+  color: #1a3c34;
+}
+
+/* rooms formattng */
+.spaces {
+  padding: 4rem 0 5rem;
+  background: #f8f4ec;
+}
+
+.spaces-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.spaces-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  color: #1a3c34;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.spaces-text p {
+  font-size: 1.1rem;
+  color: #1a3c34;
+  max-width: 380px;
+}
+
+/* footer formatting */
+.footer {
+  background: #f5ead8;
+  padding: 3.5rem 0 2.5rem;
+  border-top: 1px solid #e5d9c5;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 2.5rem;
+}
+
+.footer-brand .logo {
+  color: #1a3c34;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-logo {
+  width: 42px;
+  height: 42px;
+}
+
+.footer-brand p {
+  color: #1a3c34;
+  font-size: 0.95rem;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
+  color: #1a3c34;
+}
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: #1a3c34;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-navigation {
+  position: relative;
+}
+
+/* mini nav section in footer */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #1a3c34;
+}
+
+.footer-nav a {
+  color: #1a3c34;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* when mouse hovers over the mini nav links they become underlined */
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* mobile formattign */
+@media (max-width: 999px) {
+  .hero-inner, .spaces-inner, .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .books-grid, .events-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+}
