@@ -12,8 +12,8 @@ document.getElementById("exercise2-link").onclick = (e) => {
     document.getElementById("exercise2").classList.remove("hidden");
 };
 
-//when you change the number of days you intend to miss
-//show a message based on how many days are missed
+//when teh user changes the number of days they'll miss
+//a message shows based on how many days are input/missed
 document.getElementById("txt-num-days").onkeyup = (e) => {
     const numDays = parseInt(e.target.value);
     const pMessage = document.getElementById("p-missing-message");
