@@ -23,9 +23,9 @@ img {
   display: block;
 }
 
-/* header formatting*/
+/* header */
 .header {
-  background: #1a3c34;
+  background: #00363D;
   color: white;
   padding: 0.75rem 0;
   top: 0;
@@ -43,10 +43,16 @@ img {
   align-items: center;
   gap: 0.6rem;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.55rem;
+  font-size: 2.55rem;
   font-weight: 700;
   color: white;
   text-decoration: none;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .nav {
@@ -59,30 +65,46 @@ img {
   color: rgba(255,255,255,0.92);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* hero */
+.hero {
+  background-color: #E9D3AF;
+  background-image: url("images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 480px;
+  padding: 4.5rem 0 5.5rem;
+  position: relative;
   display: flex;
   align-items: center;
 }
 
-/* hero fomratting */
-.hero {
-    background-color: #E9D3AF;
-  padding: 3.5rem 0 4.5rem;
-  position: relative;
-
-}
-
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: 2.5rem;
   align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 .hero-text {
-  position: relative;
+  max-width: 420px;
+  margin-left: 0;
+  padding-right: 3rem;
 }
-
 
 .hero-text h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +112,6 @@ img {
   line-height: 1.15;
   color: #1a3c34;
   margin-bottom: 1.1rem;
-  position: relative;
 }
 
 .hero-text p {
@@ -98,7 +119,6 @@ img {
   color: #1a3c34;
   max-width: 420px;
   margin-bottom: 1.8rem;
-  position: relative;
 }
 
 .btn-primary {
@@ -111,10 +131,9 @@ img {
   border-radius: 50px;
   font-weight: 700;
   text-decoration: none;
-  position: relative;
 }
 
-/* loved books formatting */
+/* most loved book sec */
 .most-loved {
   padding: 4rem 0 3rem;
 }
@@ -132,6 +151,7 @@ img {
 
 .books-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -140,18 +160,22 @@ img {
   position: relative;
 }
 
-.book-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1a3c34;
-  text-align: center;
-  padding: 0 1rem;
-  line-height: 1.3;
+.book-cover {
+  height: 300px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .book-card h3 {
-    color: #1a3c34;
+  color: #1a3c34;
   font-size: 1.15rem;
   margin-bottom: 0.25rem;
 }
@@ -163,7 +187,7 @@ img {
 
 .heart {
   position: absolute;
-  top: 14px;
+  top: 320px;
   right: 14px;
   background: white;
   border: none;
@@ -172,19 +196,17 @@ img {
   border-radius: 50%;
   font-size: 1.25rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* events formattign */
+/* events */
 .events {
   padding: 1.5rem 0 4rem;
 }
 
 .events-card {
-  background: #f9e8b0;
+  background: #FCC854;
   border-radius: 28px;
   padding: 2.5rem 2rem 2.8rem;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
 .events-card h2 {
@@ -219,7 +241,6 @@ img {
   border-radius: 12px;
   padding: 0.35rem 0.9rem;
   margin-bottom: 0.9rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .event-date .month {
@@ -235,6 +256,13 @@ img {
   line-height: 1;
 }
 
+.event-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: auto;
+}
+
 .event h3 {
   font-size: 1.15rem;
   margin-bottom: 0.3rem;
@@ -245,7 +273,7 @@ img {
   color: #1a3c34;
 }
 
-/* rooms formattng */
+/* rooms */
 .spaces {
   padding: 4rem 0 5rem;
   background: #E9D3AF;
@@ -272,11 +300,22 @@ img {
   max-width: 380px;
 }
 
-/* footer formatting */
+.spaces-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.space-img {
+  width: 100%;
+  height: 230px;
+  border-radius: 18px;
+}
+
+/* footer */
 .footer {
   background: #033E46;
   padding: 3.5rem 0 2.5rem;
-  border-top: 1px solid #e5d9c5;
 }
 
 .footer-inner {
@@ -294,8 +333,9 @@ img {
 }
 
 .footer-logo {
-  width: 42px;
-  height: 42px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .footer-brand p {
@@ -322,20 +362,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: white;
-  color: #1a3c34;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  font-size: 1.2rem;
   text-decoration: none;
+}
+
+.socials img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .footer-navigation {
   position: relative;
 }
 
-/* mini nav section in footer */
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
@@ -348,31 +391,55 @@ img {
 .footer-nav a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
-/* when mouse hovers over the mini nav links they become underlined */
+/* when hovering over the mini footer navl links they become underlined to show teh users its a link */
 .footer-nav a:hover {
   text-decoration: underline;
 }
 
-/* mobile formattign */
+.footer-nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-illustration {
+  width: 110px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* mobile formatting */
 @media (max-width: 999px) {
-  .hero-inner, .spaces-inner, .footer-inner {
+  .hero-inner,
+  .spaces-inner,
+  .footer-inner {
     grid-template-columns: 1fr;
   }
 
-  .books-grid, .events-grid {
+  .books-grid,
+  .events-grid,
+  .spaces-gallery {
     grid-template-columns: 1fr;
     max-width: 380px;
     margin: 0 auto;
   }
 
-  .nav {
-    display: none;
-  }
-
   .header-inner {
     justify-content: center;
+  }
+
+  .hero {
+    min-height: 420px;
+    padding: 3.5rem 0;
+  }
+
+  .hero::before {
+    background: rgba(233, 211, 175, 0.75);
+  }
+
+  .footer-illustration {
+    margin-left: 0;
   }
 }
