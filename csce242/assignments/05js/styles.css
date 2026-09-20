@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(234,154,178);
+  background-color: rgb(253,226,228);
 }
 
 /* page class */
@@ -8,7 +8,7 @@ body {
   max-width: 1100px;
   margin: 2rem auto;
   padding: 25px;
-  background-color: rgb(255,229,236);
+  background-color: rgb(245, 206, 217);
   border-radius: 12px;
 }
 
