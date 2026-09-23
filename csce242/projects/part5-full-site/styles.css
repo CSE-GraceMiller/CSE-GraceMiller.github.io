@@ -655,6 +655,71 @@ img {
   max-width: 480px;
 }
 
+.quote-img {
+  max-width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+
+/* about pagwe pics formattintg */
+/* Main hero illustration */
+
+/* value card top pics */
+.value-top-img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.value-card {
+  padding-top: 1.4rem;
+  overflow: hidden;
+}
+
+/* timeline pic */
+.timeline-img {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* team pics */
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 4px solid #f5ead2;
+}
+
+/* bottom sect */
+.belong-left {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.open-book-img {
+  max-width: 180px;
+  flex-shrink: 0;
+}
+
+.belong-cta .btn-primary {
+  flex-shrink: 0;
+}
+
+/* Make sure the location pin looks good */
+.btn-primary .btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
 /* mobile formatting */
 @media (max-width: 999px) {
   .hero-inner,
@@ -719,10 +784,26 @@ img {
   .about-hero-text h1 {
     font-size: 2.6rem;
   }
-}
-
-@media (max-width: 600px) {
-  .values-grid {
+  .about-hero-inner {
     grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .quote-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .belong-left {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .open-book-img {
+    max-width: 160px;
+  }
+
+  .timeline-img {
+    max-width: 100%;
   }
 }
