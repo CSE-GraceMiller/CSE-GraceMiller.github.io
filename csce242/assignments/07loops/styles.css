@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 250px;
+}
+
 /* the border/box the road scene is in */
 .scene {
   width: 900px;
