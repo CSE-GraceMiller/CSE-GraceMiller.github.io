@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Catalogue | Fully Booked</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,10 +32,9 @@
         <h1>Movie Magic,<br>Ready for<br>Check-out</h1>
         <div class="movie-search">
           <div class="search-input-wrap">
-            <span class="search-icon">🔍</span>
+            <span class="search-icon"><img src="images/search-icon-teal.png"></span>
             <input type="text" placeholder="Search movies and shows">
           </div>
-          <button class="btn-search">Search</button>
         </div>
       </div>
     </div>
@@ -49,11 +45,21 @@
   <section class="movie-categories">
     <div class="container">
       <div class="category-pills">
-        <button class="category-pill kids">⭐ Kids</button>
-        <button class="category-pill family">👨‍👩‍👧 Family</button>
-        <button class="category-pill adventure">🏔 Adventure</button>
-        <button class="category-pill animation">✨ Animation</button>
-        <button class="category-pill documentary">🌐 Documentary</button>
+        <button class="category-pill kids">
+          <img src="images/purple-star.png" class="pill-icon"> Kids
+        </button>
+        <button class="category-pill family">
+          <img src="images/family-transparent.png" class="pill-icon"> Family
+        </button>
+        <button class="category-pill adventure">
+          <img src="images/teal-mountains.png" class="pill-icon"> Adventure
+        </button>
+        <button class="category-pill animation">
+          <img src="images/purple-sparkles.png" class="pill-icon"> Animation
+        </button>
+        <button class="category-pill documentary">
+          <img src="images/orange-globe.png" class="pill-icon"> Documentary
+        </button>
       </div>
     </div>
   </section>
@@ -63,7 +69,7 @@
   <section class="friday-picks">
     <div class="container">
       <div class="friday-banner">
-        <h2>🎬 Friday Family Film Picks</h2>
+        <h2>Friday Family Film Picks</h2>
         <p>Cozy up this Friday with a special selection of feel-good films for all ages</p>
       </div>
       <div class="movie-grid">
@@ -71,44 +77,60 @@
         little brighter 
         -->
         <article class="movie-card">
-          <div class="movie-poster"></div>
+          <div class="movie-poster">
+            <img src="images/movie-boy-and-robot.png">
+          </div>
           <div class="movie-info">
             <h3>A Little Brighter</h3>
             <p>A curious kid and robot discover that kindness can change the world</p>
-            <span class="runtime">⏱ 93 minutes</span>
+            <span class="runtime">
+              <img src="images/clock-icon.png"> 93 minutes
+            </span>
           </div>
         </article>
         <!-- 
         tides of tmrw 
         -->
         <article class="movie-card">
-          <div class="movie-poster"></div>
+          <div class="movie-poster">
+            <img src="images/movie-sea-turtle.png">
+          </div>
           <div class="movie-info">
             <h3>Tides of Tomorrow</h3>
             <p>A young turtle’s journey shows how every action makes a difference</p>
-            <span class="runtime">⏱ 87 minutes</span>
+            <span class="runtime">
+              <img src="images/clock-icon.png"> 87 minutes
+            </span>
           </div>
         </article>
         <!-- 
         colorful lines 
         -->
         <article class="movie-card">
-          <div class="movie-poster"></div>
+          <div class="movie-poster">
+            <img src="images/movie-painting-girl.png">
+          </div>
           <div class="movie-info">
             <h3>Colorful Lines</h3>
             <p>A girl discovers a world that’s more colorful than she ever imagined</p>
-            <span class="runtime">⏱ 89 minutes</span>
+            <span class="runtime">
+              <img src="images/clock-icon.png" alt="" class="clock-icon"> 89 minutes
+            </span>
           </div>
         </article>
         <!-- 
         star frineds 
         -->
         <article class="movie-card">
-          <div class="movie-poster"></div>
+          <div class="movie-poster">
+            <img src="images/movie-girl-and-bear.png">
+          </div>
           <div class="movie-info">
             <h3>Star Friends</h3>
             <p>Two friends discover the best adventures are the ones you share</p>
-            <span class="runtime">⏱ 96 minutes</span>
+            <span class="runtime">
+              <img src="images/clock-icon.png"> 96 minutes
+            </span>
           </div>
         </article>
       </div>
