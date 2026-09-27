@@ -747,17 +747,43 @@ img {
 /* book catalogue formatting */
 /* hero banner */
 .catalogue-hero {
-  background: var(--color-bg-soft);
-  padding: 3.5rem 0 3rem;
+  background-color: #F8F0E3;
+  background-image: url("images/books-hero.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  min-height: 0;
+  padding: 0;
   position: relative;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
-.catalogue-hero-inner {
+.catalogue-hero .container {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 3.5rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.catalogue-hero-inner {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 3.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.catalogue-hero-text {
+  max-width: 340px;
+  margin-left: 13rem;
+  position: relative;
 }
 
 .catalogue-hero-text h1 {
@@ -770,7 +796,7 @@ img {
 .catalogue-hero-text p {
   font-size: 1.15rem;
   color: var(--color-text);
-  max-width: 380px;
+  max-width: 340px;
 }
 
 /* main two-columns */
@@ -1005,7 +1031,6 @@ img {
   margin-bottom: 0.7rem;
 }
 
-
 /*book catalogue page images styling*/
 /* filter icons */
 .filter-icon-img {
@@ -1198,7 +1223,16 @@ img {
     grid-template-columns: 1fr;
   }
 
+    .catalogue-hero {
+    background-size: 100% auto;
+    background-position: center right;
+  }
+
+  .catalogue-hero-inner {
+    padding: 2.5rem 1.5rem;
+  }
+
   .catalogue-hero-text h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
