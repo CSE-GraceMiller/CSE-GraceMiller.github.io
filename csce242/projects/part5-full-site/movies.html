@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Fully Booked – Where every story begins</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Catalogue | Fully Booked</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- 
@@ -22,7 +25,147 @@
       </nav>
     </div>
   </header>
-</div>
+
+  <!-- 
+  hero 
+  -->
+  <section class="movie-hero">
+    <div class="container movie-hero-inner">
+      <div class="movie-hero-text">
+        <h1>Movie Magic,<br>Ready for<br>Check-out</h1>
+        <div class="movie-search">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search movies and shows">
+          </div>
+          <button class="btn-search">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  genre tags 
+  -->
+  <section class="movie-categories">
+    <div class="container">
+      <div class="category-pills">
+        <button class="category-pill kids">⭐ Kids</button>
+        <button class="category-pill family">👨‍👩‍👧 Family</button>
+        <button class="category-pill adventure">🏔 Adventure</button>
+        <button class="category-pill animation">✨ Animation</button>
+        <button class="category-pill documentary">🌐 Documentary</button>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  friday films 
+  -->
+  <section class="friday-picks">
+    <div class="container">
+      <div class="friday-banner">
+        <h2>🎬 Friday Family Film Picks</h2>
+        <p>Cozy up this Friday with a special selection of feel-good films for all ages</p>
+      </div>
+      <div class="movie-grid">
+        <!-- 
+        little brighter 
+        -->
+        <article class="movie-card">
+          <div class="movie-poster"></div>
+          <div class="movie-info">
+            <h3>A Little Brighter</h3>
+            <p>A curious kid and robot discover that kindness can change the world</p>
+            <span class="runtime">⏱ 93 minutes</span>
+          </div>
+        </article>
+        <!-- 
+        tides of tmrw 
+        -->
+        <article class="movie-card">
+          <div class="movie-poster"></div>
+          <div class="movie-info">
+            <h3>Tides of Tomorrow</h3>
+            <p>A young turtle’s journey shows how every action makes a difference</p>
+            <span class="runtime">⏱ 87 minutes</span>
+          </div>
+        </article>
+        <!-- 
+        colorful lines 
+        -->
+        <article class="movie-card">
+          <div class="movie-poster"></div>
+          <div class="movie-info">
+            <h3>Colorful Lines</h3>
+            <p>A girl discovers a world that’s more colorful than she ever imagined</p>
+            <span class="runtime">⏱ 89 minutes</span>
+          </div>
+        </article>
+        <!-- 
+        star frineds 
+        -->
+        <article class="movie-card">
+          <div class="movie-poster"></div>
+          <div class="movie-info">
+            <h3>Star Friends</h3>
+            <p>Two friends discover the best adventures are the ones you share</p>
+            <span class="runtime">⏱ 96 minutes</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  footer 
+  -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="images/fully-booked-logo.png" class="footer-logo">
+          <span>Fully Booked</span>
+        </div>
+        <p>Stories connect us.<br>Libraries bring us together</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon-Thu | 9:00 AM – 7:00 PM</p>
+        <p>Fri-Sat | 9:00 AM – 5:00 PM</p>
+        <p>Sun | 12:00 PM – 4:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <img src="images/instagram-transparent.png">
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="images/facebook-transparent.png">
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="images/youtube-transparent.png">
+          </a>
+          <a href="#" aria-label="Email">
+            <img src="images/email-transparent.png">
+          </a>
+        </div>
+      </div>
+      <div class="footer-col footer-navigation">
+        <h4>Navigation</h4>
+        <div class="footer-nav-wrapper">
+          <nav class="footer-nav">
+            <a href="#">Home</a>
+            <span class="sep">|</span>
+            <a href="#">About Us</a>
+            <span class="sep">|</span>
+            <a href="#">Book Catalogue</a>
+            <span class="sep">|</span>
+            <a href="#">Movie Catalogue</a>
+            <span class="sep">|</span>
+            <a href="#">Visit us</a>
+          </nav>
+          <img src="images/books-coffee.png" class="footer-illustration">
+        </div>
+      </div>
     </footer>
   </body>
 </html>
