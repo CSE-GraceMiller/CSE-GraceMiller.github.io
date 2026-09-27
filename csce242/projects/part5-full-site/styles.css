@@ -1273,6 +1273,175 @@ img {
   vertical-align: middle;
 }
 
+/* visit us page */
+/* hero */
+.visit-hero {
+  background-color: var(--color-bg-soft);
+  padding: 4.5rem 0 5rem;
+  position: relative;
+}
+
+.visit-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.visit-hero-text h1 {
+  font-size: 3.4rem;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: 1.3rem;
+}
+
+.visit-hero-text p {
+  font-size: 1.15rem;
+  color: var(--color-text);
+  max-width: 420px;
+  line-height: 1.55;
+}
+
+/* cards formatting */
+.visit-info {
+  padding: 2.5rem 0 4rem;
+  background: var(--color-bg);
+}
+
+.visit-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 1.8rem;
+  max-width: none;
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.visit-card {
+  border-radius: 24px;
+  padding: 2rem 1.8rem 2.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.visit-card h2 {
+  font-size: 1.55rem;
+  color: var(--color-text);
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* plan visit card */
+.plan-card {
+  background: var(--color-yellow);
+}
+
+.plan-item {
+  display: flex;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.plan-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* amenities sect */
+.amenities {
+  display: flex;
+  gap: 1rem;
+  margin: 1.8rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.amenity {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 90px;
+  text-align: center;
+}
+
+.amenity-icon {
+  font-size: 1.4rem;
+}
+
+.btn-directions {
+  display: inline-flex;
+  margin-top: 0.5rem;
+}
+
+/* map card/sect */
+.map-card {
+  background: var(--color-white);
+}
+
+.map-placeholder {
+  background: var(--color-bg-soft);
+  border-radius: 18px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text-soft);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.map-caption {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+/* happening today card sect */
+.events-today-card {
+  background: var(--color-kindness);
+}
+
+.today-event {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.today-event-content h3 {
+  font-size: 1.25rem;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.event-time {
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.today-event-content p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
 /* mobile formatting */
 @media (max-width: 999px) {
   .hero-inner,
@@ -1460,6 +1629,30 @@ img {
 
   .category-pills {
     justify-content: flex-start;
+  }
+
+  /* visit page mobile */
+  .visit-hero-inner,
+  .visit-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-hero-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .visit-info-grid {
+    padding: 0 1.5rem;
+  }
+
+  .visit-banner-inner {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .banner-text p {
+    max-width: 100%;
   }
 }
 
