@@ -1087,37 +1087,46 @@ img {
 /* movie cataogue page styling */
 /* hero */
 .movie-hero {
-  background-color: var(--color-bg-soft);
-  min-height: 420px;
-  padding: 4rem 0;
+  background-image: url("images/movie-hero.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  min-height: 0;
+  padding: 0;
+  position: relative;
   display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .movie-hero-inner {
   max-width: none;
   width: 100%;
-  padding: 0 3rem;
+  margin: 0;
+  padding: 3.5rem 3rem;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .movie-hero-text {
-  max-width: 420px;
+  max-width: 380px;
+  margin-left: 20rem;
 }
 
 .movie-hero-text h1 {
-  font-size: 3.2rem;
+  font-size: 3.1rem;
   line-height: 1.15;
   color: var(--color-text);
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
-/* search */
+/* hero seacrh bar */
 .movie-search {
   display: flex;
   gap: 0.8rem;
   align-items: center;
-  max-width: 480px;
+  max-width: 460px;
 }
 
 /* movie genre tags */
@@ -1418,17 +1427,22 @@ img {
 
   /* movie page mobile */
   .movie-hero {
-    min-height: 360px;
-    background-position: center;
-    padding: 3rem 0;
-  }
-
-  .movie-hero-text h1 {
-    font-size: 2.4rem;
+    background-size: 100% auto;
+    background-position: center right;
+    min-height: 280px;
   }
 
   .movie-hero-inner {
-    padding: 0 1.5rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .movie-hero-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .movie-hero-text h1 {
+    font-size: 2.3rem;
   }
 
   .movie-grid {
