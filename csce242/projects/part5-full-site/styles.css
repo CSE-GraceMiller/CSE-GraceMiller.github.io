@@ -1527,18 +1527,38 @@ img {
 
 /* mobile formatting */
 @media (max-width: 999px) {
-  .hero-inner,
-  .spaces-inner,
   .footer-inner {
     grid-template-columns: 1fr;
   }
 
-  .events-grid,
-  .spaces-gallery {
+  .events-grid, .spaces-gallery {
     grid-template-columns: 1fr;
     max-width: 380px;
     margin: 0 auto;
   }
+
+  .spaces-inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.spaces-text {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.spaces-text h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spaces-text p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
 
   .books-grid {
   flex-direction: column;
@@ -1550,8 +1570,32 @@ img {
   }
 
   .hero {
+    background-size: cover;
+    background-position: center right;
     min-height: 420px;
     padding: 3.5rem 0;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text {
+    background: rgba(255, 252, 245, 0.92);
+    padding: 1.8rem 1.6rem;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero::before {
@@ -1622,7 +1666,12 @@ img {
   }
 
   .about-hero-text {
+    background-color: rgba(255, 252, 245, 0.92);
+    padding: 1.8rem 1.6rem;
+    border-radius: 20px;
+    max-width: 90%;
     margin: 0 auto;
+    text-align: center;
   }
 
   .about-hero-text h1 {
@@ -1658,25 +1707,52 @@ img {
     grid-template-columns: 1fr;
   }
 
-    .catalogue-hero {
-    background-size: 100% auto;
-    background-position: center right;
-  }
+  .catalogue-hero {
+  background-size: cover;
+  background-position: center center;
+  min-height: 380px;
+  padding: 3rem 0;
+}
 
   .catalogue-hero-inner {
+    justify-content: center;
     padding: 2.5rem 1.5rem;
+  }
+
+  .catalogue-hero-text {
+    background-color: rgba(255, 252, 245, 0.92);
+    padding: 1.8rem 1.6rem;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .catalogue-hero-text h1 {
     font-size: 2.2rem;
   }
 
+  .catalogue-hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* movie page mobile */
   .movie-hero {
-    background-size: 100% auto;
-    background-position: center right;
-    min-height: 280px;
-  }
+  background-size: cover;
+  background-position: center center;
+  min-height: 380px;
+  padding: 3rem 0;
+}
+
+.movie-hero-text {
+  background: rgba(245, 237, 220, 0.92);
+  padding: 1.8rem 1.6rem;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
   .movie-hero-inner {
     padding: 2.5rem 1.5rem;
@@ -1709,10 +1785,26 @@ img {
   }
 
   /* visit page mobile */
+  .visit-hero {
+  background-size: cover;
+  background-position: center right;
+  min-height: 380px;
+  padding: 3rem 0;
+}
+
   .visit-hero-inner,
   .visit-info-grid {
     grid-template-columns: 1fr;
   }
+
+.visit-hero-text {
+  background: rgba(255, 252, 245, 0.92);
+  padding: 1.8rem 1.6rem;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
   .visit-hero-text h1 {
     font-size: 2.6rem;
