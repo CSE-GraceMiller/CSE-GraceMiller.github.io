@@ -228,6 +228,7 @@ img {
   font-size: 0.95rem;
 }
 
+/* heart button styling */
 .heart {
   position: absolute;
   top: 320px;
@@ -239,6 +240,15 @@ img {
   border-radius: 50%;
   font-size: 1.25rem;
   cursor: pointer;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+
+.heart.liked {
+  color: #e83e8c;
+  background: #fff0f5;
+  transform: scale(1.1);
 }
 
 /* events */

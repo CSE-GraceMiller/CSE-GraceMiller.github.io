@@ -1,3 +1,4 @@
+//mobile header toggle
 document.getElementById("toggle-nav").onclick = () => {
   const menu = document.getElementById("menu-items");
   const arrow = document.getElementById("toggle-nav");
@@ -10,3 +11,16 @@ document.getElementById("toggle-nav").onclick = () => {
     arrow.innerHTML = "▼";
   }
 };
+
+//heart button toggle
+document.querySelectorAll(".heart").forEach(button => {
+  button.onclick = () => {
+    button.classList.toggle("liked");
+    if (button.classList.contains("liked")) {
+      button.innerHTML = "♥";
+    } 
+    else {
+      button.innerHTML = "♡";
+    }
+  };
+});
