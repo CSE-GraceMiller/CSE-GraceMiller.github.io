@@ -70,7 +70,7 @@ vacations.push(new Vacation(
     "Beach",
     "Tropical paradise with stunning beaches, lush rainforests, and volcanic landscapes.",
     "Snorkel at Molokini Crater, drive the Road to Hana, watch sunrise at Haleakalā, surf in Lahaina.",
-    "img",
+    "maui-img.png",
     "Maui, Hawaii"
 ));
 
@@ -79,7 +79,7 @@ vacations.push(new Vacation(
     "Mountain",
     "World-famous ski resort town surrounded by the Rocky Mountains and charming alpine villages.",
     "Ski or snowboard, hike Maroon Bells, explore downtown Aspen, take a hot air balloon ride.",
-    "img",
+    "Aspen-Colorado.jpg",
     "Aspen, Colorado"
 ));
 
@@ -88,7 +88,7 @@ vacations.push(new Vacation(
     "Beach",
     "Iconic white-washed buildings, dramatic caldera views, and crystal-clear Aegean waters.",
     "Watch sunset in Oia, visit black sand beaches, go wine tasting, explore ancient Akrotiri.",
-    "img",
+    "greece.jpg",
     "Santorini, Greece"
 ));
 
@@ -97,7 +97,7 @@ vacations.push(new Vacation(
     "Mountain",
     "Stunning Canadian Rockies with turquoise lakes, glaciers, and abundant wildlife.",
     "Visit Lake Louise, drive the Icefields Parkway, hike Johnston Canyon, soak in Banff Hot Springs.",
-    "img",
+    "banff.jpg",
     "Banff, Canada"
 ));
 
@@ -106,7 +106,7 @@ vacations.push(new Vacation(
     "Beach",
     "Overwater bungalows, pristine coral reefs, and some of the clearest water on Earth.",
     "Snorkel or dive, relax on a private island, go dolphin watching, enjoy a sunset cruise.",
-    "img",
+    "maldives.jpg",
     "Maldives"
 ));
 
@@ -115,7 +115,7 @@ vacations.push(new Vacation(
     "Mountain",
     "Car-free mountain village at the foot of the legendary Matterhorn.",
     "Ski the Matterhorn Glacier, ride the Gornergrat Railway, hike alpine trails, enjoy fondue.",
-    "img",
+    "swiss-alps.jpg",
     "Zermatt, Switzerland"
 ));
 
@@ -124,7 +124,7 @@ vacations.push(new Vacation(
     "Beach",
     "A family-friendly island with a long pier, lighthouse, and calm Atlantic beaches.",
     "Visit the Oak Island Lighthouse, fish from the pier, swim, ride bikes along the coast.",
-    "img",
+    "oak.jpg",
     "Oak Island, NC"
 ));
 
@@ -133,7 +133,7 @@ vacations.push(new Vacation(
     "Beach",
     "One of the oldest seaside resorts on the East Coast, known for its hammocks and quiet beaches.",
     "Relax in a Pawleys Island hammock, beach walk, visit nearby Brookgreen Gardens.",
-    "img",
+    "pawley.jpg",
     "Pawleys Island, SC"
 ));
 
