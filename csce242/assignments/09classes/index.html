@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <head>
-  <title>Assignment  - Classes</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Vacations</title>
+    <!-- w3.css for the modal like in w3 examples in assignmnet link -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="assignment">
-    <h1>Assignment 9</h1>
-    <h2>Classes</h2>
+    <div class="page">
+        <header>
+            <h1>Vacations</h1>
+            <h2>Vacation Experiences</h2>
+        </header>
+        <main>
+            <div id="gallery" class="gallery"></div>
+        </main>
+        <footer>
+            <p>&copy; gracemiller</p>
+        </footer>
+    </div>
+    <!-- modal (i used the w3schools style in the assignbment link) -->
+     <div id="vacationModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom modal-content">
+            <span onclick="closeModal()" class="w3-button w3-display-topright close-btn">&times;</span>
+            <div class="modal-grid">
+                <!-- map part iframe -->
+                 <div class="modal-map">
+                    <iframe id="modalMap" width="100%" height="100%"></iframe>
+            </div>
+            <!-- modal deteails -->
+             <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p><strong>Type:</strong> <span id="modalType"></span></p>
+                <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+                <p><strong>Things To Do:</strong> <span id="modalThings"></span></p>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="script.js"></script>
 </body>
