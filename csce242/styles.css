@@ -58,6 +58,10 @@ main > .columns {
     color: rgb(234,154,178);
 }
 
+.four p a {
+    color: rgb(234,154,178);
+}
+
 
 /* images */
 img {
