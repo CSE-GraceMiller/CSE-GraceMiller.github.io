@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<head>
+  <title>Fully Booked – Book Catalogue</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 
+  header 
+  -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="images/fully-booked-logo.png" class="logo-img">
+        <span>Fully Booked</span>
+      </a>
+      <button id="toggle-nav" class="nav-toggle">▼</button>
+      <nav class="nav" id="menu-items">
+        <a href="home.html" class="nav-link"><img src="images/home-transparent.png" class="nav-icon"> Home</a>
+        <a href="books.html" class="nav-link"><img src="images/book-icon-white.png" class="nav-icon"> Books</a>
+        <a href="movies.html" class="nav-link"><img src="images/cd-icon-white.png" class="nav-icon"> Movies</a>
+        <a href="visit.html" class="nav-link"><img src="images/location-transparent.png" class="nav-icon"> Visit</a>
+        <a href="about.html" class="nav-link"><img src="images/search-transparent.png" class="nav-icon"> About</a>
+      </nav>
+    </div>
+  </header>
+  <!-- 
+  catalogue hero 
+  -->
+  <section class="catalogue-hero">
+    <div class="container catalogue-hero-inner">
+      <div class="catalogue-hero-text">
+        <h1>Find Your Next<br>Favorite Story</h1>
+        <p>Countless books. Endless adventures.<br>Read, Explore, Imagine, Belong</p>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  main catalogue 
+  -->
+  <section class="catalogue">
+    <div class="container catalogue-inner">
+      <!-- 
+      filters 
+      -->
+      <aside class="filters">
+        <h2 class="filters-title">Filter Books</h2>
+        <div class="filter-group">
+          
+          <h3><img src="images/filter-age-group.png" class="filter-icon-img"> Age Group</h3>
+          <label class="filter-option">
+            <input type="checkbox" checked> All Ages
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> 0-5 (Early Learners)
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> 6-8 (Children)
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> 9-12 (Tweens)
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> 13+ (Teens)
+          </label>
+        </div>
+        <div class="filter-group">
+          <h3><img src="images/filter-genre-tag.png" class="filter-icon-img">Genre</h3>
+          <label class="filter-option">
+            <input type="checkbox" checked> All Genres
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Adventure
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Fantasy
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Friendship
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Mystery
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Science
+          </label>
+          <label class="filter-option">
+            <input type="checkbox"> Non-fiction
+          </label>
+        </div>
+      </aside>
+      <div class="catalogue-content">
+        <!-- 
+        search bar 
+        -->
+        <div class="search-bar">
+          <div class="search-input-wrap">
+            <img src="images/search-icon-teal.png" class="search-icon-img">
+            <input type="text" placeholder="Search by Title, Author, or Topic">
+          </div>
+          <button class="btn-search">Search</button>
+        </div>
+        <!-- 
+        featured 
+        -->
+        <div class="featured-section">
+          <h2 class="featured-title">
+            <span class="star">★</span> Featured This Week <span class="star">★</span>
+          </h2>
+          <div class="featured-grid">
+            <!-- 
+            book 1 
+            -->
+            <article class="featured-card">
+              <div class="book-cover">
+                <img src="images/book-treehouse-tales.png">
+              </div>
+              <h3>The Secret in the Maple Tree</h3>
+              <p class="book-desc">Magic can happen anywhere</p>
+              <span class="genre-tag adventure">Adventure</span>
+              <label class="available">
+                <input type="checkbox" checked disabled> Available
+              </label>
+            </article>
+            <!-- 
+            book 2 
+            -->
+            <article class="featured-card">
+              <div class="book-cover">
+                <img src="images/book-brave-little-whale.png">
+              </div>
+              <h3>The Brave Little Whale</h3>
+              <p class="book-desc">A small whale with big dreams</p>
+              <span class="genre-tag animals">Animals</span>
+              <label class="available">
+                <input type="checkbox" checked disabled> Available
+              </label>
+            </article>
+            <!-- 
+            book 3 
+            -->
+            <article class="featured-card">
+              <div class="book-cover">
+                <img src="images/book-lunas-nightlight.png">
+              </div>
+              <h3>Luna’s Nightlight</h3>
+              <p class="book-desc">Luna learns about bravery</p>
+              <span class="genre-tag friendship">Friendship</span>
+              <label class="available">
+                <input type="checkbox" checked disabled> Available
+              </label>
+            </article>
+          </div>
+        </div>
+        <!-- 
+        all books 
+        -->
+        <div class="all-books-section">
+          <h2 class="section-title">All Books</h2>
+          <div class="all-books-grid">
+            <!-- 
+            all books book 1 
+            -->
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-pip-plants-a-planet.png">
+              </div>
+              <div class="book-info">
+                <h3>Pip Plants a Planet</h3>
+                <p class="author">By Elin Carter</p>
+                <p class="book-desc">A little act of kindness can grow a greener world</p>
+                <span class="genre-tag environment">Environment</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+            <!-- 
+            all books book 2 
+            -->
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-the-cloud-collectors.png">
+              </div>
+              <div class="book-info">
+                <h3>The Cloud Collectors</h3>
+                <p class="author">By Nora Fields</p>
+                <p class="book-desc">Two friends chase clouds and find something even better</p>
+                <span class="genre-tag adventure">Adventure</span>
+                <span class="genre-tag friendship">Friendship</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+            <!-- 
+            all books book 3
+            -->
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-the-robot-who-read.png">
+              </div>
+              <div class="book-info">
+                <h3>The Robot Who Read</h3>
+                <p class="author">By Kai Mendoza</p>
+                <p class="book-desc">A Robot discovers that stories can change everthing</p>
+                <span class="genre-tag friendship">Friendship</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+            <!-- 
+            all books book 4
+            -->
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-the-mystery-of-mossy-creek.png">
+              </div>
+              <div class="book-info">
+                <h3>The Mystery of Willow Creek</h3>
+                <p class="author">By Jack Holloway</p>
+                <p class="book-desc">Three friends, one clue, a summer to remember</p>
+                <span class="genre-tag adventure">Adventure</span>
+                <span class="genre-tag friendship">Friendship</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-a-house-for-everyone.png">
+              </div>
+              <div class="book-info">
+                <h3>A House For Everyone</h3>
+                <p class="author">By Mateo Singh</p>
+                <p class="book-desc">Different homes, one big world, a celebration of belonging</p>
+                <span class="genre-tag animals">Animals</span>
+                <span class="genre-tag friendship">Friendship</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+            <article class="book-card-catalogue">
+              <div class="book-cover">
+                <img src="images/book-stella-and-the-shooting-star.png">
+              </div>
+              <div class="book-info">
+                <h3>Stella and The Shooting Star</h3>
+                <p class="author">By Priya Raman</p>
+                <p class="book-desc">The biggest dreams start with a small wish</p>
+                <span class="genre-tag adventure">Adventure</span>
+                <label class="available">
+                  <input type="checkbox" checked disabled> Available
+                </label>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+  footer 
+  -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="images/fully-booked-logo.png" class="footer-logo">
+          <span>Fully Booked</span>
+        </div>
+        <p>Stories connect us.<br>Libraries bring us together</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon-Thu | 9:00 AM – 7:00 PM</p>
+        <p>Fri-Sat | 9:00 AM – 5:00 PM</p>
+        <p>Sun | 12:00 PM – 4:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><img src="images/instagram-transparent.png"></a>
+          <a href="#" aria-label="Facebook"><img src="images/facebook-transparent.png"></a>
+          <a href="#" aria-label="YouTube"><img src="images/youtube-transparent.png"></a>
+          <a href="#" aria-label="Email"><img src="images/email-transparent.png"></a>
+        </div>
+      </div>
+      <div class="footer-col footer-navigation">
+        <h4>Navigation</h4>
+        <div class="footer-nav-wrapper">
+          <nav class="footer-nav">
+            <a href="home.html">Home</a>
+            <span class="sep">|</span>
+            <a href="books.html">Books</a>
+            <span class="sep">|</span>
+            <a href="movies.html">Movies</a>
+            <span class="sep">|</span>
+            <a href="visit.html">Visit</a>
+            <span class="sep">|</span>
+            <a href="about.html">About</a>
+          </nav>
+          <img src="images/books-coffee.png" class="footer-illustration">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
