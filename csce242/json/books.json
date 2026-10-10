@@ -1,0 +1,83 @@
+[
+  {
+    "_id": 1,
+    "title": "The Secret in the Maple Tree",
+    "author": "Unknown",
+    "description": "Magic can happen anywhere",
+    "genre": "Adventure",
+    "available": true,
+    "img_name": "images/secret-maple-tree.png"
+  },
+  {
+    "_id": 2,
+    "title": "The Brave Little Whale",
+    "author": "Unknown",
+    "description": "A small whale with big dreams",
+    "genre": "Animals",
+    "available": true,
+    "img_name": "images/brave-little-whale.png"
+  },
+  {
+    "_id": 3,
+    "title": "Luna's Nightlight",
+    "author": "Unknown",
+    "description": "Luna learns about bravery",
+    "genre": "Friendship",
+    "available": true,
+    "img_name": "images/lunas-nightlight.png"
+  },
+  {
+    "_id": 4,
+    "title": "Pip Plants a Planet",
+    "author": "Elin Carter",
+    "description": "A little act of kindness can grow a greener world",
+    "genre": "Environment",
+    "available": true,
+    "img_name": "images/pip-plants-a-planet.png"
+  },
+  {
+    "_id": 5,
+    "title": "The Cloud Collectors",
+    "author": "Nora Fields",
+    "description": "Two friends chase clouds and find something even better",
+    "genre": "Adventure, Friendship",
+    "available": true,
+    "img_name": "images/cloud-collectors.png"
+  },
+  {
+    "_id": 6,
+    "title": "The Robot Who Read",
+    "author": "Kai Mendoza",
+    "description": "A Robot discovers that stories can change everything",
+    "genre": "Friendship",
+    "available": true,
+    "img_name": "images/robot-who-read.png"
+  },
+  {
+    "_id": 7,
+    "title": "The Mystery of Willow Creek",
+    "author": "Jack Holloway",
+    "description": "Three friends, one clue, a summer to remember",
+    "genre": "Adventure, Friendship",
+    "available": true,
+    "img_name": "images/mystery-willow-creek.png"
+  },
+  {
+    "_id": 8,
+    "title": "A House For Everyone",
+    "author": "Mateo Singh",
+    "description": "Different homes, one big world, a celebration of belonging",
+    "genre": "Animals, Friendship",
+    "available": true,
+    "img_name": "images/house-for-everyone.png"
+  },
+  {
+    "_id": 9,
+    "title": "Stella and The Shooting Star",
+    "author": "Priya Raman",
+    "description": "The biggest dreams start with a small wish",
+    "genre": "Adventure",
+    "available": true,
+    "img_name": "images/stella-shooting-star.png"
+  }
+]

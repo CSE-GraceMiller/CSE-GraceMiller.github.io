@@ -30,4 +30,9 @@ document.getElementById('contact-form').onsubmit = async(e) => {
         result.innerHTML = "Sorry, we couldn't send your message. Please try again.";
         result.classList.add("error");
     }
+
+    setTimeout(() => {
+        result.innerHTML = "";
+        result.className = "";
+    }, 1000);
 };

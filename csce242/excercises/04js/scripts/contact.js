@@ -19,13 +19,15 @@ document.getElementById('contact-form').onsubmit = async(e) => {
         if (response.ok) {
             result.innerHTML = "Message Sent";
             form.reset();
-        } else {
+        } 
+        else {
             result.innerHTML ="Error: " + data.message;
         }
 
     } catch (error) {
         result.innerHTML = "Sorry, we couldn't send your message";
-    } finally {
+    } 
+    finally {
         result.innerHTML = "";
     }
 };
