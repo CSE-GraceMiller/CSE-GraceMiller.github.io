@@ -128,12 +128,27 @@
         </p>
       </div>
       <div class="spaces-gallery">
-        <img src="images/library-pic-1.png" class="space-img">
-        <img src="images/library-pic-2.png" class="space-img">
-        <img src="images/library-pic-3.png" class="space-img">
+        <div class="slideshow-container">
+          <!-- 
+          slideshow js slidse
+          -->
+          <div class="slide active">
+            <img src="images/library-pic-1.png" alt="Reading nook">
+          </div>
+          <div class="slide">
+            <img src="images/library-pic-2.png" alt="Creative space">
+          </div>
+          <div class="slide">
+            <img src="images/library-pic-3.png" alt="Library interior">
+          </div>
+          <!-- 
+          arrows 
+          -->
+          <button class="slide-btn prev" id="prev-slide">❮</button>
+          <button class="slide-btn next" id="next-slide">❯</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- footer -->
   <footer class="footer">
