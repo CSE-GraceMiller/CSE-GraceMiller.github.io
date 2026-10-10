@@ -6,7 +6,7 @@
     "description": "A little act of kindness can grow a greener world",
     "genre": "Environment",
     "available": true,
-    "img_name": "images/pip-plants-a-planet.png"
+    "img_name": "book-pip-plants-a-planet.png"
   },
   {
     "_id": 2,
@@ -15,7 +15,7 @@
     "description": "Two friends chase clouds and find something even better",
     "genre": "Adventure, Friendship",
     "available": true,
-    "img_name": "images/cloud-collectors.png"
+    "img_name": "book-the-cloud-collectors.png"
   },
   {
     "_id": 3,
@@ -24,7 +24,7 @@
     "description": "A Robot discovers that stories can change everything",
     "genre": "Friendship",
     "available": true,
-    "img_name": "images/robot-who-read.png"
+    "img_name": "book-the-robot-who-read.png"
   },
   {
     "_id": 4,
@@ -33,7 +33,7 @@
     "description": "Three friends, one clue, a summer to remember",
     "genre": "Adventure, Friendship",
     "available": true,
-    "img_name": "images/mystery-willow-creek.png"
+    "img_name": "book-the-mystery-of-mossy-creek.png"
   },
   {
     "_id": 5,
@@ -42,7 +42,7 @@
     "description": "Different homes, one big world, a celebration of belonging",
     "genre": "Animals, Friendship",
     "available": true,
-    "img_name": "images/house-for-everyone.png"
+    "img_name": "book-a-house-for-everyone.png"
   },
   {
     "_id": 6,
@@ -51,6 +51,6 @@
     "description": "The biggest dreams start with a small wish",
     "genre": "Adventure",
     "available": true,
-    "img_name": "images/stella-shooting-star.png"
+    "img_name": "book-stella-and-the-shooting-star.png"
   }
 ]
