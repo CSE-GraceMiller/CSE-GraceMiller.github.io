@@ -1,32 +1,5 @@
 [
   {
-    "_id": 1,
-    "title": "The Secret in the Maple Tree",
-    "author": "Unknown",
-    "description": "Magic can happen anywhere",
-    "genre": "Adventure",
-    "available": true,
-    "img_name": "images/secret-maple-tree.png"
-  },
-  {
-    "_id": 2,
-    "title": "The Brave Little Whale",
-    "author": "Unknown",
-    "description": "A small whale with big dreams",
-    "genre": "Animals",
-    "available": true,
-    "img_name": "images/brave-little-whale.png"
-  },
-  {
-    "_id": 3,
-    "title": "Luna's Nightlight",
-    "author": "Unknown",
-    "description": "Luna learns about bravery",
-    "genre": "Friendship",
-    "available": true,
-    "img_name": "images/lunas-nightlight.png"
-  },
-  {
     "_id": 4,
     "title": "Pip Plants a Planet",
     "author": "Elin Carter",
